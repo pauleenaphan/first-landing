@@ -1,11 +1,18 @@
 import "../styles/mainPage.css";
 import moonImg from "../assets/moon.png";
+import mouse from "../assets/mouse.png";
+import rocket from "../assets/rocket.png";
+import { BsMoonStars } from "react-icons/bs";
 
 export const MainPage = () =>{
     return(
         <div className="mainPage">
             <nav> 
-                <div id="logo"> FirstLanding </div>
+                <div className="logoIconContainer">
+                    <BsMoonStars id="moonIcon"/>
+                    <div id="logo"> FirstLanding </div>
+                </div>
+                
                 <button> Explore Pages </button>
             </nav>
 
@@ -18,7 +25,7 @@ export const MainPage = () =>{
                         the making. 
                     </p>
 
-                    <button> Explore pages </button>
+                    <button className="exploreBtn"> Start Exploring </button>
                 </div>
                 <img src={moonImg} alt="picture of moonlanding"/>
             </section>
@@ -30,28 +37,28 @@ export const MainPage = () =>{
                     that all follow the same format. I would reccomend this experience to all my friends and everyone
                     I know. P.S. I was paid to write this review."
                 </h2>
-                <p> - Rocky (Black and white cat)</p>
+                <p> - Your Mom </p>
             </section>
 
             <div className="blockContainer">
                 <div className="textContainer">
-                    <p> Only a click </p>
+                    <p> ONLY A CLICK AWAY </p>
                     <div className="picTextTitle"> Explore effortlessly through clicking </div>
-                    <p> 
+                    <p className="picTextBody"> 
                         Exploring these pages doesn't take more work than a simple click. 
                         The naked eye will see all the possibilities of what a typically landing
                         page looks like and the truth of life.
                     </p>
                 </div>
-                <img src={""}/>
+                <img id="mouseImg" src={mouse} alt="arrow pointing"/>
             </div>
 
             <div className="blockContainer">
-                <img src={""}/>
+                <img src={rocket} alt="rocket"/>
                 <div className="textContainer">
-                    <p> No Fomo </p>
+                    <p> NO MORE FOMO </p>
                     <div className="picTextTitle"> Experience the first landing </div>
-                    <p>
+                    <p className="picTextBody">
                         Just like the moon landing, you want to experience it first hand.
                         Don't miss out on this first landing like you did with the moon.
                     </p>
@@ -60,7 +67,7 @@ export const MainPage = () =>{
 
             <section className="planContainer">
                 <h2> Choose the plan that works for you </h2>
-                <div className="priceOuterContainer">
+                <div className="planInnerContainer">
                     <div className="priceContainer">
                         <h3> Free </h3>
                         <p> We all love free </p>
@@ -72,6 +79,7 @@ export const MainPage = () =>{
                             <li> Unlimited Views </li>
                         </ul>
                     </div>
+                
 
                     <div className="priceContainer">
                         <h3> Basic </h3>
@@ -97,13 +105,12 @@ export const MainPage = () =>{
                         </ul>
                     </div>
                 </div>
-
-                <p> Less saving and start viewing </p>
+                <p id="captionMsg"> Less saving and start viewing </p>
             </section>
 
-            <section className="captionButtonContainer">
-                <h1> Ready to start viewing the first landing? </h1>
-                <button> Get Started - It's free </button>
+            <section className="captionBtnContainer">
+                <h4> Ready to start viewing the first landing? </h4>
+                <button className="getStartBtn"> Get Started - It's free </button>
             </section>
         </div>
     )

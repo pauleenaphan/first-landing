@@ -5,15 +5,26 @@
 
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 150px;
 }
 
 .mainPage nav{
     background-color: #2E294E;
-    padding: 20px 50px;
+    padding: 25px 50px;
 
     display: flex;
     justify-content: space-between;
+}
+
+.mainPage .logoIconContainer{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+.logoIconContainer #moonIcon{
+    font-size: 40px;
 }
 
 .mainPage #logo{
@@ -52,6 +63,22 @@
     gap: 20px;
 }
 
+.mainPage .exploreBtn{
+    padding: 15px 20px;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #2E294E;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.mainPage .exploreBtn:hover{
+    opacity: 0.8;
+}
+
 .mainPage h1{
     font-size: 50px;
 }
@@ -69,5 +96,114 @@
     padding: 10px 0px;
 }
 
+/* ! Text and pictures */
+.mainPage .blockContainer{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.mainPage .textContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mainPage .picTextTitle{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.mainPage .picTextBody{
+    font-size: 20px;
+}
+
+.mainPage .blockContainer img{
+    height: 50vh;
+}
+
+#mouseImg{
+    height: 30vh;
+}
+
+/* ! Pricing and plans  */
+.mainPage .planContainer h2, #captionMsg{
+    text-align: center;
+}
+
+.mainPage .planContainer h2{
+    font-size: 50px;
+}
+
+#captionMsg:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.mainPage .planInnerContainer{
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.mainPage .priceOuterContainer ul{
+    list-style-type: none;
+}
+
+.mainPage .priceContainer{
+    padding: 50px 20px;
+    border-radius: 10px;
+    display: flex;
+    width: 20%;
+    /* background-color: #2E294E; */
+    border: 2px solid rgb(129, 129, 129);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainPage .planPrice{
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+.mainPage .priceBtns, .getStartBtn{
+    color: white;
+    background-color: #2E294E;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.mainPage .priceBtns:hover, .getStartBtn:hover{
+    opacity: 0.8;
+}
+
+.mainPage .planBenefits{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    padding: 20px 10px 0px;
+}
+
+.mainPage .priceContainer h3, .mainPage .priceContainer p, .planPrice{
+    text-align: center;
+}
+
+.mainPage .captionBtnContainer{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 300px;
+}
 
 
