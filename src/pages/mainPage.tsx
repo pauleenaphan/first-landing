@@ -1,7 +1,7 @@
 import "../styles/mainPage.css";
-import moonImg from "../assets/mainPage/moon.png";
-import mouse from "../assets/mainPage/mouse.png";
-import rocket from "../assets/mainPage/rocket.png";
+import moonImg from "../assets/mainpage/moon.png";
+import mouse from "../assets/mainpage/mouse.png";
+import rocket from "../assets/mainpage/rocket.png";
 import logo from "../assets/mainpage/logo.png";
 
 import { RiPagesFill } from "react-icons/ri";
