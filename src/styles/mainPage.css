@@ -1,45 +1,37 @@
-.mainPage{
+.mainPage, .mainPage .exploreBtn, .mainPage .priceBtns {
     background-color: #011638;
     color: white;
-    font-family: 'Roboto', sans-serif;
-
+    font-family: 'Space Mono', monospace;
     display: flex;
     flex-direction: column;
     gap: 150px;
 }
 
 .mainPage nav{
-    background-color: #2E294E;
-    padding: 25px 50px;
+    /* background-color: #2E294E; */
+    padding: 15px 50px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid white;
 }
 
-.mainPage .logoIconContainer{
+#logo{
+    width: 18%;
+    /* border: 1px solid white; */
+}
+
+.mainPage .exploreContainer{
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-weight: bold;
-}
-
-.logoIconContainer #moonIcon{
-    font-size: 40px;
-}
-
-.mainPage #logo{
-    font-size: 30px;
-}
-
-.mainPage nav button{
-    padding: 10px 20px;
-    background-color: white;
-    border-radius: 10px;
+    gap: 5px;
+    font-size: 20px;
     cursor: pointer;
-    color: black;
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
+}
+
+.mainPage .exploreContainer:hover{
+    opacity: 0.7;
 }
 
 .mainPage .aboutContainer{
@@ -47,12 +39,13 @@
     display: flex;
     align-items: center;
     padding: 50px;
+    gap: 20px;
     justify-content: center;
 }
 
 .mainPage .aboutContainer img{
     /* background-color: pink; */
-    width: 30%;
+    width: 20%;
 }
 
 .mainPage .aboutLeftContainer{
@@ -67,24 +60,30 @@
     padding: 15px 20px;
     width: fit-content;
     font-size: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
     background-color: #2E294E;
     border: none;
     color: white;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(129, 121, 201, 0.8), 0 0 10px rgba(129, 121, 201, 0.6), 0 0 30px rgba(129, 121, 201, 0.4);
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.mainPage .exploreBtn:hover {
+    box-shadow: 0 0 15px rgba(129, 121, 201, 1), 0 0 20px rgba(129, 121, 201, 0.7), 0 0 40px rgba(129, 121, 201, 0.5);
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
 .mainPage .exploreBtn:hover{
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 .mainPage h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .mainPage .quoteContainer{
-    /* background-color: green; */
     padding: 50px;
     font-size: 20px;
     width: 60%;
@@ -98,7 +97,6 @@
 
 /* ! Text and pictures */
 .mainPage .blockContainer{
-    /* background-color: green; */
     display: flex;
     align-items: center;
     padding: 50px;
@@ -144,7 +142,6 @@
     cursor: pointer;
 }
 
-
 .mainPage .planInnerContainer{
     display: flex;
     gap: 20px;
@@ -158,13 +155,18 @@
 
 .mainPage .priceContainer{
     padding: 50px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     width: 20%;
-    /* background-color: #2E294E; */
     border: 2px solid rgb(129, 129, 129);
     flex-direction: column;
     gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.mainPage .priceContainer:hover{
+    transform: scale(1.1);
+    border: 2px white solid;
 }
 
 .mainPage .planPrice{
@@ -176,11 +178,12 @@
     color: white;
     background-color: #2E294E;
     padding: 10px 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
-    border: none;
+    border: 2px solid #9c93ca;
     cursor: pointer;
+    align-items: center;
 }
 
 .mainPage .priceBtns:hover, .getStartBtn:hover{
@@ -206,4 +209,37 @@
     margin-bottom: 300px;
 }
 
+.getStartBtn{
+    transition: transform 0.3s ease;
+    font-family: 'Space Mono', monospace;
+}
 
+.getStartBtn:hover{
+    transform: scale(1.05);
+}
+
+.mainPage .benefitContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.checkMarkIcon{
+    padding-top: 5px;
+}
+
+
+/* ! Footer */
+.mainPage footer{
+    font-size: 20px;
+    padding: 20px 5px 20px;
+    border-top: 3px solid white;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mainPage #githubIcon{
+    color: white !important;
+    font-size: 25px;
+}
