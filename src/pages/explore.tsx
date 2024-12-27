@@ -14,7 +14,7 @@ export const ExplorePage = () =>{
     return(
         <div className="explorePage">
             <nav> 
-                <img id="logo" src={logo} alt="logo"/>
+                <img id="firstLandingLogo" src={logo} alt="logo" onClick={() =>{ navigate("/")}}/>
                 
                 <div className="exploreContainer" onClick={() => { navigate("/explore")}}>
                     <RiPagesFill />

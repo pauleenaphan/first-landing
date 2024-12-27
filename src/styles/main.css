@@ -18,6 +18,7 @@
 #firstLandingLogo{
     width: 20vh;
     /* border: 1px solid white; */
+    cursor: pointer;
 }
 
 .mainPage .exploreContainer, .explorePage .exploreContainer{
@@ -247,6 +248,10 @@
 
 /* ! Responsive for mobile */
 @media (max-width: 500px) {
+    .mainPage nav, .explorePage nav{
+        padding: 15px;
+    }
+
     .mainPage .aboutContainer{
         gap: 50px;
     }
@@ -288,8 +293,12 @@
         width: 80%;
     }
 
-    h4{
+    .mainPage h4{
         font-size: 35px;
         padding: 0px 20px;
+    }
+
+    .mainPage footer{
+        font-size: 15px;
     }
 }
