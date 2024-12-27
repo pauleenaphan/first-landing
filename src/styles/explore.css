@@ -1,0 +1,62 @@
+.explorePage{
+    background-color: #011638;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+}
+
+.pageShowcaseContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.landingPageContainer{
+    border: 2px solid rgb(129, 129, 129);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+}
+
+.explorePage .cover{
+    border: 2px solid white;
+}
+
+.explorePage .nameDateContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.explorePage .nameDateContainer .date{
+    font-size: 20px;
+}
+
+.explorePage .toolsContainer{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.explorePage .tools{
+    color: white;
+    background-color: #2E294E;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #9c93ca;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#linkBtn{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#linkBtn:hover{
+    opacity: 0.8;
+}

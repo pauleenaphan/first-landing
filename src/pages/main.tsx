@@ -1,4 +1,6 @@
-import "../styles/mainPage.css";
+import { useNavigate } from "react-router";
+
+import "../styles/main.css";
 import moonImg from "../assets/mainpage/moon.png";
 import mouse from "../assets/mainpage/mouse.png";
 import rocket from "../assets/mainpage/rocket.png";
@@ -9,16 +11,17 @@ import { IoCheckmark } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 
 export const MainPage = () =>{
+    const navigate = useNavigate();
+
     return(
         <div className="mainPage">
             <nav> 
                 <img id="logo" src={logo} alt="logo"/>
                 
-                <div className="exploreContainer">
+                <div className="exploreContainer" onClick={() => { navigate("/explore")}}>
                     <RiPagesFill />
                     <p> Explore </p>
                 </div>
-                
             </nav>
 
             <section className="aboutContainer">
@@ -30,7 +33,7 @@ export const MainPage = () =>{
                         the making. 
                     </p>
 
-                    <button className="exploreBtn"> Start Exploring </button>
+                    <button className="exploreBtn" onClick={() => { navigate("/explore")}}> Start Exploring </button>
                 </div>
                 <img src={moonImg} alt="picture of moonlanding"/>
             </section>
@@ -141,7 +144,7 @@ export const MainPage = () =>{
 
             <section className="captionBtnContainer">
                 <h4> Ready to view the first landing? </h4>
-                <button className="getStartBtn"> Get Started - It's free </button>
+                <button className="getStartBtn" onClick={() => { navigate("/explore")}}> Get Started - It's free </button>
             </section>
 
             <footer>
