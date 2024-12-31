@@ -21,7 +21,7 @@
 }
 
 .explorePage .cover{
-    border: 2px solid white;
+    border: 2px solid rgb(129, 129, 129);
 }
 
 .explorePage .nameDateContainer{
@@ -29,6 +29,11 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.explorePage .nameDateContainer h1{
+    font-weight: bold;
+    font-size: 30px;
 }
 
 .explorePage .nameDateContainer .date{
@@ -47,9 +52,8 @@
 .explorePage .tools{
     color: white;
     background-color: #2E294E;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
-    font-weight: bold;
     border: 2px solid #9c93ca;
     align-items: center;
 }

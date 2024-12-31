@@ -16,7 +16,7 @@
 }
 
 #firstLandingLogo{
-    width: 20vh;
+    width: 30vh;
     /* border: 1px solid white; */
     cursor: pointer;
 }
@@ -80,18 +80,21 @@
 
 .mainPage h1{
     font-size: 40px;
+    font-weight: bold;
 }
 
 .mainPage .quoteContainer{
     padding: 50px 20px;
-    font-size: 20px;
+    font-size: 30px;
     width: 60%;
     margin: 0 auto;
 }
 
+
 .mainPage .quoteContainer p{
     text-align: right;
     padding: 10px 0px;
+    font-size: 25px;
 }
 
 /* ! Text and pictures */
@@ -252,6 +255,10 @@
         padding: 15px;
     }
 
+    #firstLandingLogo{
+        width: 20vh;
+    }
+    
     .mainPage .aboutContainer{
         gap: 50px;
     }
@@ -273,7 +280,7 @@
     }
 
     .mainPage .quoteContainer h2{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .mainPage .planContainer h2{
@@ -282,7 +289,7 @@
 
     .mainPage .blockContainer img{
         width: 35vh;
-        height: 35vh;
+        height: 35vh !important;
     }
 
     .mainPage .picTextTitle{

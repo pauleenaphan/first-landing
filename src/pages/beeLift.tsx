@@ -1,8 +1,10 @@
+import "../styles/tailwind.css";
+
 export const BeeLiftPage = () =>{
     return(
         <div>
-            <nav>
-                <div>      
+            <nav className="bg-black text-white flex justify-around align-center p-3">
+                <div className="flex gap-5">      
                     <h1> BeeLift </h1>
                     <p> Ride </p>
                     <p> Drive </p>
@@ -10,7 +12,7 @@ export const BeeLiftPage = () =>{
                     <p> BeeEats </p>
                     <p> About </p>
                 </div>
-                <div>
+                <div className="flex gap-5">
                     <p> EN </p>
                     <p> Help </p>
                     <p> Login </p> 
