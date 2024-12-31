@@ -1,4 +1,5 @@
 import firstLandingCover from "../assets/mainpage/cover.png";
+import beeLiftCover  from "../assets/beeLift/cover.png";
 
 export const landingPagesData = [
     {
@@ -9,4 +10,12 @@ export const landingPagesData = [
         img: firstLandingCover,
         navigate: "/",
     },
+    {
+        name: "BeeLift",
+        description: "BeeLift is a ride-sharing landing page that is a Uber clone.",
+        tools: ["React", "Tailwind CSS"],
+        date: "12/30/2024",
+        img: beeLiftCover,
+        navigate: "/beeLift"
+    }
 ];
