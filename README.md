@@ -6,5 +6,5 @@ FirstLanding is a landing page that showcases my other landing pages. This proje
 ## Pages 
 | Title       | Description                        | Technology Used    | 
 |:----------------|:------------------------------------|:--------------------|
-| [First Landing](https://firstlandings.netlify.app/) | First landing page that acts as a home to all other landing pages. | React, CSS 
+| [FirstLanding](https://firstlandings.netlify.app/) | First landing page that acts as a home to all other landing pages. | React, CSS 
 | [BeeLift](https://firstlandings.netlify.app/beeLift) | BeeLift is a rideshare landing page mockup inspired by the Uber landing page. | React, Tailwind CSS
