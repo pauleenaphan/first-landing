@@ -1,47 +1,41 @@
 import { useNavigate } from "react-router";
 import { landingPagesData } from "../data/landingPages";
+
 import { LandingPage } from "../types/landingPageTypes";
+import { MainNav } from "../components/mainNav";
 
-import logo from "../assets/mainpage/logo.png";
+import styles from "../styles/explore.module.css";
 
-import "../styles/explore.css";
 
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { RiPagesFill } from "react-icons/ri";
+
 
 export const ExplorePage = () =>{
     const navigate = useNavigate();
     return(
-        <div className="explorePage">
-            <nav> 
-                <img id="firstLandingLogo" src={logo} alt="logo" onClick={() =>{ navigate("/")}}/>
-                
-                <div className="exploreContainer" onClick={() => { navigate("/explore")}}>
-                    <RiPagesFill />
-                    <p> Explore </p>
-                </div>
-            </nav>
+        <div className={styles.explorePage}>
+            <MainNav></MainNav>
 
-            <div className="pageShowcaseContainer">
+            <div className={styles.pageShowcaseContainer}>
                 {landingPagesData.map((page: LandingPage, index: number) =>(
-                    <div key={index} className="landingPageContainer">
-                        <img src={page.img} className="cover" alt="landing page name"/>
-                        <div className="nameDateContainer">
+                    <div key={index} className={styles.landingPageContainer}>
+                        <img src={page.img} className={styles.cover} alt="landing page name"/>
+                        <div className={styles.nameDateContainer}>
                             <h1> {page.name} </h1>
-                            <p className="date"> {page.date} </p>
+                            <p className={styles.date}> {page.date} </p>
                         </div>
                         <p>{page.description}</p>
-                        <div className="toolsContainer">
+                        <div className={styles.toolsContainer}>
                             {page.tools.map((tool: string, index: number) => {
                                 return (
                                     <div key={index}>
-                                        <p className="tools">{tool}</p>
+                                        <p className={styles.tools}>{tool}</p>
                                     </div>
                                 );
                             })}
                         </div>
                         
-                        <FaArrowUpRightFromSquare id="linkBtn" onClick={() =>{ navigate(`${page.navigate}`)}}/>
+                        <FaArrowUpRightFromSquare id={styles.linkBtn} onClick={() =>{ navigate(`${page.navigate}`)}}/>
                     </div>
                 ))}
             </div>

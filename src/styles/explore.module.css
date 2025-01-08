@@ -21,28 +21,23 @@
     width: 30%;
 }
 
-.explorePage .cover{
+.cover{
     border: 2px solid rgb(129, 129, 129);
 }
 
-.explorePage .nameDateContainer{
+.nameDateContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.explorePage .nameDateContainer h1{
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.explorePage .nameDateContainer .date{
+.nameDateContainer .date{
     font-size: 20px;
     font-style: italic;
 }
 
-.explorePage .toolsContainer{
+.toolsContainer{
     display: flex;
     gap: 5px;
     flex-direction: row;
@@ -50,7 +45,7 @@
     margin: 20px 0;
 }
 
-.explorePage .tools{
+.tools{
     color: white;
     background-color: #2E294E;
     padding: 5px 10px;

@@ -23,7 +23,7 @@ import { IoLogoFacebook, IoLogoYoutube } from "react-icons/io";
 
 export const BeeLiftPage = () =>{
     return(
-        <div className="beelift-tailwind">
+        <div className="tailwind-styling">
             <main className="font-roboto">
                 <nav className="bg-[#B8860B] text-white flex justify-between items-center py-3 px-36 mb-20">
                     <div className="flex gap-5 items-center">      

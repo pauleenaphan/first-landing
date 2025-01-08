@@ -1,4 +1,4 @@
-.mainPage, .mainPage .exploreBtn, .mainPage .priceBtns {
+.mainPage, .exploreBtn, .priceBtns {
     background-color: #011638;
     color: white;
     font-family: 'Space Mono', monospace;
@@ -7,33 +7,8 @@
     gap: 150px;
 }
 
-.mainPage nav, .explorePage nav{
-    padding: 15px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid white;
-}
 
-#firstLandingLogo{
-    width: 30vh;
-    /* border: 1px solid white; */
-    cursor: pointer;
-}
-
-.mainPage .exploreContainer, .explorePage .exploreContainer{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.mainPage .exploreContainer:hover, .explorePage .exploreContainer:hover{
-    opacity: 0.7;
-}
-
-.mainPage .aboutContainer{
+.aboutContainer{
     display: flex;
     align-items: center;
     padding: 50px 10px;
@@ -42,12 +17,12 @@
     flex-wrap: wrap;
 }
 
-.mainPage .aboutContainer img{
+.aboutContainer img{
     /* background-color: pink; */
     width: 40vh;
 }
 
-.mainPage .aboutLeftContainer{
+.aboutLeftContainer{
     /* background-color: pink; */
     width: 40%;
     display: flex;
@@ -55,7 +30,7 @@
     gap: 20px;
 }
 
-.mainPage .exploreBtn{
+.exploreBtn{
     padding: 15px 20px;
     width: fit-content;
     font-size: 20px;
@@ -69,12 +44,12 @@
     transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.mainPage .exploreBtn:hover {
+.exploreBtn:hover {
     box-shadow: 0 0 15px rgba(129, 121, 201, 1), 0 0 20px rgba(129, 121, 201, 0.7), 0 0 40px rgba(129, 121, 201, 0.5);
     transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
 
-.mainPage .exploreBtn:hover{
+.exploreBtn:hover{
     opacity: 0.85;
 }
 
@@ -83,22 +58,22 @@
     font-weight: bold;
 }
 
-.mainPage .quoteContainer{
+.quoteContainer{
     padding: 50px 20px;
-    font-size: 30px;
+    font-size: 25px;
     width: 60%;
     margin: 0 auto;
 }
 
 
-.mainPage .quoteContainer p{
+.quoteContainer p{
     text-align: right;
     padding: 10px 0px;
     font-size: 25px;
 }
 
 /* ! Text and pictures */
-.mainPage .blockContainer{
+.blockContainer{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -107,23 +82,23 @@
     padding: 50px 0px;
 }
 
-.mainPage .textContainer{
+.textContainer{
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.mainPage .picTextTitle{
-    font-size: 50px;
+.picTextTitle{
+    font-size: 40px;
     font-weight: bold;
 }
 
-.mainPage .picTextBody{
+.picTextBody{
     font-size: 20px;
 }
 
-.mainPage .blockContainer img{
+.blockContainer img{
     height: 50vh;
 }
 
@@ -132,11 +107,11 @@
 }
 
 /* ! Pricing and plans  */
-.mainPage .planContainer h2, #captionMsg{
+.planContainer h2, #captionMsg{
     text-align: center;
 }
 
-.mainPage .planContainer h2{
+.planContainer h2{
     padding: 0px 30px;
     font-size: 50px;
 }
@@ -146,7 +121,7 @@
     cursor: pointer;
 }
 
-.mainPage .planInnerContainer{
+.planInnerContainer{
     display: flex;
     gap: 20px;
     padding: 50px;
@@ -154,11 +129,11 @@
     flex-wrap: wrap;
 }
 
-.mainPage .priceOuterContainer ul{
+.priceOuterContainer ul{
     list-style-type: none;
 }
 
-.mainPage .priceContainer{
+.priceContainer{
     padding: 50px 20px;
     border-radius: 5px;
     display: flex;
@@ -169,17 +144,17 @@
     transition: transform 0.3s ease;
 }
 
-.mainPage .priceContainer:hover{
+.priceContainer:hover{
     transform: scale(1.1);
     border: 2px white solid;
 }
 
-.mainPage .planPrice{
+.planPrice{
     font-size: 30px;
     padding: 20px 0px;
 }
 
-.mainPage .priceBtns, .getStartBtn{
+.priceBtns, .getStartBtn{
     color: white;
     background-color: #2E294E;
     padding: 10px 30px;
@@ -191,11 +166,11 @@
     align-items: center;
 }
 
-.mainPage .priceBtns:hover, .getStartBtn:hover{
+.priceBtns:hover, .getStartBtn:hover{
     opacity: 0.8;
 }
 
-.mainPage .planBenefits{
+.planBenefits{
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -204,11 +179,11 @@
     padding: 20px 10px 0px;
 }
 
-.mainPage .priceContainer h3, .mainPage .priceContainer p, .planPrice{
+.priceContainer h3, .priceContainer p, .planPrice{
     text-align: center;
 }
 
-.mainPage .captionBtnContainer{
+.captionBtnContainer{
     font-size: 50px;
     text-align: center;
     margin-bottom: 300px;
@@ -244,7 +219,7 @@
     gap: 10px;
 }
 
-.mainPage #githubIcon{
+#githubIcon{
     color: white !important;
     font-size: 25px;
 }
@@ -259,15 +234,15 @@
         width: 20vh;
     }
     
-    .mainPage .aboutContainer{
+    .aboutContainer{
         gap: 50px;
     }
 
-    .mainPage .aboutContainer img{
+    .aboutContainer img{
         width: 30vh;
     }
 
-    .mainPage .aboutLeftContainer{
+    .aboutLeftContainer{
         width: 80%;
     }
 
@@ -275,28 +250,28 @@
         font-size: 35px;
     }
 
-    .mainPage .quoteContainer{
+    .quoteContainer{
         width: 80%;
     }
 
-    .mainPage .quoteContainer h2{
+    .quoteContainer h2{
         font-size: 25px;
     }
 
-    .mainPage .planContainer h2{
+    .planContainer h2{
         font-size: 35px;
     }
 
-    .mainPage .blockContainer img{
+    .blockContainer img{
         width: 35vh;
         height: 35vh !important;
     }
 
-    .mainPage .picTextTitle{
+    .picTextTitle{
         font-size: 40px;
     }
 
-    .mainPage .textContainer{
+    .textContainer{
         width: 80%;
     }
 
@@ -309,3 +284,4 @@
         font-size: 15px;
     }
 }
+
