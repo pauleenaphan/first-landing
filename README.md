@@ -9,3 +9,4 @@ FirstLanding is a landing page that showcases my other landing pages. This proje
 | [FirstLanding](https://firstlandings.netlify.app/) | First landing page that acts as a home to all other landing pages. | React, CSS 
 | [BeeLift](https://firstlandings.netlify.app/beeLift) | BeeLift is a rideshare landing page mockup inspired by the Uber landing page. | React, Tailwind CSS
 | [CozySprouts](https://pauleenaphan.github.io/cozySprout/) | Cozysprouts is a greens company that sells and promotes healthy green plants. | HTML, Tailwind CSS
+| [TurboPrecisions](https://turboprecisionmachining.com/) | Turboprecision is a company that offers machining services | React, CSS

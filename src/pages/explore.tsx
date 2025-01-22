@@ -19,23 +19,36 @@ export const ExplorePage = () =>{
             <div className={styles.pageShowcaseContainer}>
                 {landingPagesData.map((page: LandingPage, index: number) =>(
                     <div key={index} className={styles.landingPageContainer}>
-                        <img src={page.img} className={styles.cover} alt="landing page name"/>
-                        <div className={styles.nameDateContainer}>
-                            <h1> {page.name} </h1>
-                            <p className={styles.date}> {page.date} </p>
+                        <img src={page.img} className={styles.cover} alt={page.name}/>
+                        <div className={styles.projectInfoContainer}>
+                            <div className={styles.nameDateContainer}>
+                                <p>
+                                    <h1> {page.name} </h1>
+                                    <p className={styles.date}> {page.date} </p>
+                                </p>
+                                
+                                <FaArrowUpRightFromSquare className={styles.linkCon}
+                                id={styles.linkBtn} 
+                                onClick={() => {
+                                    if (page.navigate.startsWith('/')) {
+                                        navigate(`${page.navigate}`);
+                                    } else {
+                                        window.open(page.navigate, '_blank'); // Open absolute URL in a new tab
+                                    }
+                                }} 
+                            />
+                            </div>
+                            <p className={styles.description}>{page.description}</p>
+                            <div className={styles.toolsContainer}>
+                                {page.tools.map((tool: string, index: number) => {
+                                    return (
+                                        <div key={index}>
+                                            <p className={styles.tools}>{tool}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
                         </div>
-                        <p>{page.description}</p>
-                        <div className={styles.toolsContainer}>
-                            {page.tools.map((tool: string, index: number) => {
-                                return (
-                                    <div key={index}>
-                                        <p className={styles.tools}>{tool}</p>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                        
-                        <FaArrowUpRightFromSquare id={styles.linkBtn} onClick={() =>{ navigate(`${page.navigate}`)}}/>
                     </div>
                 ))}
             </div>

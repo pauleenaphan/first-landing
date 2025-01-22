@@ -7,7 +7,6 @@
     gap: 150px;
 }
 
-
 .aboutContainer{
     display: flex;
     align-items: center;
@@ -23,11 +22,14 @@
 }
 
 .aboutLeftContainer{
-    /* background-color: pink; */
     width: 40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.aboutLeftContainer p{
+    font-size: 20px;
 }
 
 .exploreBtn{

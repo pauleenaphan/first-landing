@@ -2,39 +2,55 @@
     background-color: #011638;
     color: white;
     font-family: 'Space Mono', monospace;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .pageShowcaseContainer{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
     padding: 40px;
 }
 
 .landingPageContainer{
-    border: 2px solid rgb(129, 129, 129);
-    padding: 30px;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 30%;
+    flex-direction: row;
+    width: 70%;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 0 auto;
 }
 
 .cover{
-    border: 2px solid rgb(129, 129, 129);
+    width: 50%;
+    border-right: 2px solid white;
+}
+
+.projectInfoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
 }
 
 .nameDateContainer{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 20px;
 }
 
-.nameDateContainer .date{
+.date{
     font-size: 20px;
     font-style: italic;
+}
+
+.description{
+    font-size: 20px;
+    padding: 0 20px;
 }
 
 .toolsContainer{
@@ -43,6 +59,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 20px 0;
+    padding: 0 20px;
 }
 
 .tools{
@@ -56,6 +73,7 @@
 
 #linkBtn{
     font-size: 20px;
+    padding-top: 10px;
     cursor: pointer;
 }
 
